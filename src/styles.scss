@@ -1,1 +1,403 @@
-/* You can add global styles to this file, and also import other style files */
+/* Imports
+*
+-----------------------*/
+@import "././node_modules/bootstrap/scss/bootstrap.scss";
+@import "././node_modules/modularscale-sass/libsass/scss/main.scss";
+@import "././node_modules/hover.css/scss/hover.scss";
+@import "assets/fontawesome/css/fontawesome-all.min.css";
+
+/* Fonts
+*
+-----------------------*/
+@font-face {
+    font-family: 'satellite';
+    src: url('assets/fonts/Satellite/Satellite.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'semplicita';
+    src:url('assets/fonts/Semplicita/Semplicita-Medium.otf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/* Mixins
+*
+-----------------------*/
+@function set-text-color($color){
+    @if(lightness($color) > 50){
+        @return #000000;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin transition($time){
+    transition: all $time ease-out;
+}
+
+
+/* Typography & Spacing
+*
+-----------------------*/
+*:not(i){
+    font-family: semplicita;
+}
+
+$fontType: p, h6, h5, h4, h3, h2, h1;
+
+$modularscale: (
+    base: 1rem,
+    ratio: $major-third
+);
+
+@for $i from 1 through 7{
+    #{ nth($fontType, $i) }{
+        font-size: ms($i);
+        @if $i == 1 {
+            font-family: 'satellite';
+        }
+    }
+}
+
+.pink-text{
+    color: $meraki-pink;
+}
+
+$section-space: ms(3);
+$footer-space: ms(0);
+
+
+/* Buttons
+*
+-----------------------*/
+button.btn{
+    border-radius: 2rem;
+
+    &.not-allowed {
+        cursor: not-allowed;
+    }
+}
+.btn-meraki-outline{
+    background-color: rgba(250,175,65,0);
+    border-color: $meraki-yellow;
+    color: $meraki-yellow;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: white;
+        background-color: rgba(250,175,65,1);
+        border-color: $meraki-yellow;
+    }
+}
+.btn-meraki{
+    background-color: $meraki-yellow;
+    border-color: $meraki-yellow;
+    color: $meraki-pink;
+    @include transition(0.5s);
+
+    &:hover, &:focus, &.focus, &:active, &.active{
+        // color: white;
+        background-color: darken($meraki-yellow, 15%);
+        border-color: darken($meraki-yellow, 15%);
+    }
+}
+
+
+/* General Layout
+*
+-----------------------*/
+@include media-breakpoint-down(md){
+    section.hero{
+        height: 100% !important;
+    }
+}
+section{
+    background-color: white;
+
+    &.hero{
+        width: 100%;
+        height: 100vh;
+    }
+
+    &:not(.hero){
+        padding: $section-space 0px;
+    }
+}
+
+main{
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 5px 0 #000000;
+}
+
+nav.navbar{
+    background: none;
+    font-size: ms(1);
+    box-shadow: 0 0 0 0 #000000;
+    @include transition(0.5s);
+    padding: $spacer*1.25 $spacer;
+}
+
+nav.navbar-small{
+    background-color: white;
+    box-shadow: 0 1px 5px 0 #000000;
+    padding: $spacer/2 $spacer;
+}
+
+nav.yellow-navbar{
+    background: none !important;
+    color: white;
+
+    .active{
+        color: $meraki-blue;
+    }
+}
+
+footer{
+    // background-color: darken($meraki-yellow, 15%);
+    background-color: $meraki-blue;
+    width: 100%;
+    padding: $footer-space;
+    color: $meraki-yellow;
+    position: fixed;
+    z-index: 1;
+    left: 0;    bottom: 0;
+
+    p{
+        font-size: ms(-1);
+    }
+
+    p,li a{
+        font-family: 'satellite';
+    }
+
+    li{
+        list-style: none;
+        margin-left: -30px !important;
+    }
+
+    a{
+        color: $meraki-yellow;
+        &:hover{
+            color: darken($meraki-yellow, 15%);
+            @include transition(0.3s);
+        }
+    }
+}
+
+iframe{
+    border: 1px solid $meraki-yellow !important;
+    border-radius: ms(0);
+}
+
+
+/* Home Page
+*
+-----------------------*/
+section#intro{
+    // transform: translateZ(0px);
+    background-image: url('/assets/img/home/home-photo.jpg');
+    background-size: 100% auto;
+    background-position: top right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    padding: $section-space*3 0px;
+    color: $meraki-blue;
+
+    div#divider{
+        height: 1px;
+        width: 100%;
+        background-color: $meraki-yellow;
+    }
+
+    p.lead{
+        font-family: 'satellite';
+        font-size: ms(2);
+    }
+
+    strong{
+        color: $meraki-yellow;
+    }
+
+    #arrow-row{
+        position: absolute;
+        bottom: ms(2);
+        left: 50%;
+
+
+        i{
+            color: $meraki-yellow;
+        }
+    }
+}
+
+section#description{
+    background-color: rgba(255,255,0,0);
+    padding: 3%;
+    color: $meraki-yellow;
+    h1,h2{
+        color: $meraki-blue;
+    }
+}
+
+section#services{
+    div.card{
+        border: 0px;
+    }
+
+    h1, a{
+        color: $meraki-blue;
+        @include transition (0.5s);
+    }
+
+    a:hover{
+        color: $meraki-pink;
+    }
+}
+
+section#about{
+    h3{
+        color: $meraki-yellow;
+        font-size: 3rem;
+    }
+
+    h6, p{
+        color: $meraki-blue;
+    }
+    p{
+        font-size: ms(2);
+    }
+
+    div#about-text{
+        padding: 20px 3%;
+    }
+
+    blockquote p{
+        color: $meraki-pink;
+        font-weight: 900;
+        font-size: ms(2);
+        width: 90%;
+    }
+
+    div#about-image{
+        background-image: url('assets/img/home/meraki-significado-meaning.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        width: 100%;
+        height: 510px;
+        max-width: 510px;
+        max-height: 510px;
+
+        div#about-image-text{
+            padding: 2%;
+
+            h4{
+                color: $meraki-yellow;
+            }
+            p{
+                color: white;
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+section#clients,
+section#instagram{
+    h4{
+        color: $meraki-blue;
+    }
+}
+
+section#instagram{
+    iframe{
+        border: 0px solid white !important;
+        border-radius: 0px;
+    }
+}
+
+section#contact{
+    background-color: $meraki-yellow;
+    position: relative;
+    min-height: 100vh;
+
+    h4{
+        color: $meraki-blue;
+    }
+
+    a{
+        color: white;
+
+        &:hover{
+            color: darken($meraki-yellow, 15%);
+            @include transition(0.3s);
+        }
+    }
+
+    div#contact-info{
+        padding-left: 5%;
+    }
+
+    div#contact-image{
+        height: 100vh; width: 100%;
+        background-image: url('assets/img/home/Foto_Contacto-01.png');
+        background-size: 100% auto;
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+
+    p span{
+        font-weight: 600;
+    }
+}
+
+
+/* Animations
+*
+-----------------------*/
+.arrow-animation{
+  animation: arrowFrames ease-out 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes arrowFrames{
+  0% {
+    transform:  translate(0px,-20px)  ;
+    opacity: 0;
+  }
+  40% {
+    transform:  translate(0px,0px)  ;
+    opacity: 1;
+  }
+  100% {
+    transform:  translate(0px,-20px)  ;
+    opacity: 0;
+  }
+}
+//
+// .pulse-animation:hover{
+//   animation: pulseFrames ease-out 2s;
+//   animation-iteration-count: infinite;
+//   transform-origin: 50% 50%;
+// }
+//
+// @keyframes pulseFrames{
+//   0% {
+//     transform:  scale(1)  ;
+//   }
+//   40% {
+//     transform:  scale(1.5)  ;
+//   }
+//   100% {
+//     transform:  scale(1)  ;
+//   }
+// }
