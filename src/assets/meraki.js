@@ -36,21 +36,12 @@ $(document).ready(function() {
 
 // WAYPOINTS
 // ------------------------------->
-// var $contact = $('#contact');
-// var $navbar = $('.navbar');
-
-$('#contact').waypoint(function(direction){
-    if(direction == 'down'){
-		console.log("Contact reached");
-        $('.navbar').addClass('yellow-navbar');
-    } else {
-        $('.navbar').removeClass('yellow-navbar');
-    }
-}, {offset: '0px'});
-
-
-// WOWJS
-// ------------------------------->
-var wow = new WOW({
-    offset: 50
+$(document).ready(function() {
+	$("#contact").waypoint(function(direction){
+	    if(direction == 'down'){
+	        $(".navbar").addClass('yellow-navbar');
+	    } else {
+	        $(".navbar").removeClass('yellow-navbar');
+	    }
+	}, {offset: '-50px'});
 });

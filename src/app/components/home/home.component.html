@@ -16,7 +16,7 @@
         </div>
         <div class="row justify-content-center" id="arrow-row">
             <a pageScroll href="#description">
-                <i class="far fa-arrow-alt-circle-down arrow-animation fa-2x"></i>
+                <i class="far fa-arrow-alt-circle-down arrow-animation fa-2x wow fadeIn"></i>
             </a>
         </div>
     </div>
@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="card text-center">
-                    <a href="#" title="meraki-branding">
+                    <a [routerLink]="['/servicios','branding']" title="meraki-branding">
                         <img class="card-img-top w-75 hvr-grow wow zoomIn" src="assets/img/home/branding.png" alt="Card image cap">
                     </a>
                     <div class="card-body">
@@ -61,7 +61,7 @@
                             <h5 class="card-title text-center wow fadeInUp">Branding</h5>
                         </a> -->
                         <p class="card-text text-center wow fadeInUp">Reflejamos la esencia de tu marca en cada uno de sus elementos.</p>
-                        <a href="#" class="d-block d-md-none">
+                        <a [routerLink]="['/servicios','branding']" class="d-block d-md-none">
                             <button class="btn btn-meraki btn-block wow fadeIn" role="button" type="button">Ver Más</button>
                         </a>
                     </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="card text-center">
-                    <a href="" title="meraki-start-ups">
+                    <a [routerLink]="['/servicios','startups']" title="meraki-start-ups">
                         <img class="card-img-top w-75 hvr-grow wow zoomIn" src="assets/img/home/start-ups.png" alt="Card image cap" data-wow-delay="0.2s">
                     </a>
                     <div class="card-body">
@@ -77,7 +77,7 @@
                             <h5 class="card-title text-center wow fadeInUp">Fotografía</h5>
                         </a> -->
                         <p class="card-text text-center wow fadeInUp">Capturamos los momentos perfectos para ti y tu empresa.</p>
-                        <a href="#" class="d-block d-md-none">
+                        <a [routerLink]="['/servicios','startups']" class="d-block d-md-none">
                             <button class="btn btn-meraki btn-block wow fadeIn" role="button" type="button">Ver Más</button>
                         </a>
                     </div>
@@ -85,7 +85,7 @@
             </div>
             <div class="col-12 col-md-4">
                 <div class="card text-center">
-                    <a href="" title="meraki-edición-video">
+                    <a [routerLink]="['/servicios','audiovisual']" title="meraki-edición-video">
                         <img class="card-img-top w-75 hvr-grow wow zoomIn" src="assets/img/home/edicion-video.png" alt="Card image cap" data-wow-delay="0.1s">
                     </a>
                     <div class="card-body">
@@ -93,7 +93,7 @@
                             <h5 class="card-title text-center wow fadeInUp">Producciones Audiovisuales</h5>
                         </a> -->
                         <p class="card-text text-center wow fadeInUp">Contamos tu historia a través de contenido multimedia.</p>
-                        <a href="#" class="d-block d-md-none">
+                        <a [routerLink]="['/servicios','audiovisual']" class="d-block d-md-none">
                             <button class="btn btn-meraki btn-block wow fadeIn" role="button" type="button">Ver Más</button>
                         </a>
                     </div>
@@ -102,17 +102,17 @@
         </div>
         <div class="row d-none d-md-flex">
             <div class="col-12 col-md-4">
-                <a href="#">
+                <a [routerLink]="['/servicios','branding']">
                     <button class="btn btn-meraki btn-block wow fadeInLeft" role="button" type="button">Ver Más</button>
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="#">
+                <a [routerLink]="['/servicios','startups']">
                     <button class="btn btn-meraki btn-block wow fadeInUp" role="button" type="button">Ver Más</button>
                 </a>
             </div>
             <div class="col-12 col-md-4">
-                <a href="#">
+                <a [routerLink]="['/servicios','audiovisual']">
                     <button class="btn btn-meraki btn-block wow fadeInRight" role="button" type="button">Ver Más</button>
                 </a>
             </div>
@@ -209,35 +209,35 @@
         <div class="row d-flex align-items-center">
             <div class="col-12 col-md-4 col-lg-5" id="contact-info">
                 <h4 class="display-4 wow fadeInDown">¿Cuándo empezamos?</h4>
-                <a href="mailto:contacto@meraki-creative.studio" class="wow fadeInLeft">
-                    <p><i class="fas fa-envelope fa-lg"></i> &nbsp; <span>contacto@meraki-creative.studio</span></p>
+                <a href="mailto:{{_is.info.email}}" class="wow fadeInLeft">
+                    <p><i class="fas fa-envelope fa-lg"></i> &nbsp; <span>{{_is.info.email}}</span></p>
                 </a>
-                <a href="tel:7226560428" class="wow fadeInLeft" data-wow-delay="0.1s">
-                    <p><i class="fab fa-whatsapp-square fa-lg"></i> &nbsp; <span>(722) 656 0428</span></p>
+                <a href="https://api.whatsapp.com/send?phone={{_is.info.cel}}" class="wow fadeInLeft" data-wow-delay="0.1s">
+                    <p><i class="fab fa-whatsapp-square fa-lg"></i> &nbsp; <span>{{_is.info.celFormat}}</span></p>
                 </a>
-                <address class="wow fadeInLeft" data-wow-delay="0.2s">
+                <!-- <address class="wow fadeInLeft" data-wow-delay="0.2s">
                     <a href="https://goo.gl/maps/P8YifSkR2S72" target="_blank" rel="external">
                         <p><i class="fas fa-map-marker-alt fa-lg"></i> &nbsp; <span>Eucalipto 220, Casa Blanca. <br>CP. 52171. Metepec, MEX.</span></p>
                     </a>
-                </address>
+                </address> -->
             </div>
             <div class="col-12 col-md-8 col-lg-7 d-flex align-items-center justify-content-around" id="contact-image">
-                <a href="#" target="_blank" rel="external" title="meraki-facebook">
+                <a [href]="_is.info.facebook" target="_blank" rel="external" title="meraki-facebook">
                     <i class="fab fa-facebook-square fa-4x wow fadeIn hvr-float"></i>
                 </a>
-                <a href="#" target="_blank" rel="external" title="meraki-instagram">
+                <a [href]="_is.info.instagram" target="_blank" rel="external" title="meraki-instagram">
                     <i class="fab fa-instagram fa-4x wow fadeIn hvr-float" data-wow-delay="0.1s"></i>
                 </a>
-                <a href="#" target="_blank" rel="external" title="meraki-pinterest">
+                <a [href]="_is.info.pinterest" target="_blank" rel="external" title="meraki-pinterest">
                     <i class="fab fa-pinterest-square fa-4x wow fadeIn hvr-float" data-wow-delay="0.2s"></i>
                 </a>
-                <a href="#" target="_blank" rel="external" title="meraki-behance">
+                <a [href]="_is.info.behance" target="_blank" rel="external" title="meraki-behance">
                     <i class="fab fa-behance-square fa-4x wow fadeIn hvr-float" data-wow-delay="0.3s"></i>
                 </a>
-                <a href="#" target="_blank" rel="external" title="meraki-linkedin">
+                <a [href]="_is.info.linkedin" target="_blank" rel="external" title="meraki-linkedin">
                     <i class="fab fa-linkedin fa-4x wow fadeIn hvr-float" data-wow-delay="0.4s"></i>
                 </a>
-                <a href="#" target="_blank" rel="external" title="meraki-vimeo">
+                <a [href]="_is.info.vimeo" target="_blank" rel="external" title="meraki-vimeo">
                     <i class="fab fa-vimeo-square fa-4x wow fadeIn hvr-float" data-wow-delay="0.5s"></i>
                 </a>
             </div>

@@ -2,6 +2,7 @@
 *
 -----------------------*/
 @import "././node_modules/bootstrap/scss/bootstrap.scss";
+@import "././node_modules/animate.css/animate.min";
 @import "././node_modules/modularscale-sass/libsass/scss/main.scss";
 @import "././node_modules/hover.css/scss/hover.scss";
 @import "assets/fontawesome/css/fontawesome-all.min.css";
@@ -138,7 +139,7 @@ nav.navbar{
     background: none;
     font-size: ms(1);
     box-shadow: 0 0 0 0 #000000;
-    @include transition(0.5s);
+    @include transition(0.3s);
     padding: $spacer*1.25 $spacer;
 }
 
@@ -148,12 +149,19 @@ nav.navbar-small{
     padding: $spacer/2 $spacer;
 }
 
-nav.yellow-navbar{
-    background: none !important;
-    color: white;
+.yellow-navbar{
+    background: $meraki-yellow !important;
+    box-shadow: 0 0 0 0 #000000 !important;    
+
+    a{
+        color: white !important;
+        &.dropdown-item{
+            color: $meraki-blue !important;
+        }
+    }
 
     .active{
-        color: $meraki-blue;
+        color: $meraki-blue !important;
     }
 }
 

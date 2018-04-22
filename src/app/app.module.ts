@@ -12,13 +12,24 @@ import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 // Routes
 import { app_routing } from './app.routes';
 
+// Pipes
+
 // Services
+import { InfoService } from './services/info.service';
 
 // Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { PrivacyComponent } from './components/privacy/privacy.component';
+import { SitemapComponent } from './components/sitemap/sitemap.component';
+import { BrandingComponent } from './components/services/branding/branding.component';
+import { StartupsComponent } from './components/services/startups/startups.component';
+import { VideoComponent } from './components/services/video/video.component';
 
 
 @NgModule({
@@ -26,7 +37,15 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent,
+    AboutComponent,
+    ContactComponent,
+    PrivacyComponent,
+    SitemapComponent,
+    BrandingComponent,
+    StartupsComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +58,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     app_routing
   ],
   providers: [
+      InfoService
   ],
   bootstrap: [AppComponent]
 })
