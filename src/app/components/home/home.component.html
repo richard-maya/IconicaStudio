@@ -14,11 +14,7 @@
                 <!-- <p class="lead font-italic">Thinking made Visual… that's <strong>Design.</strong></p> -->
             </div>
         </div>
-        <div class="row justify-content-center" id="arrow-row">
-            <a pageScroll href="#description">
-                <i class="far fa-arrow-alt-circle-down arrow-animation fa-2x wow fadeIn"></i>
-            </a>
-        </div>
+        <app-arrow></app-arrow>
     </div>
 </section>
 
@@ -30,7 +26,7 @@
         <div class="row d-flex align-items-center">
             <div class="col-12 col-md-5">
                 <h2 class="text-left wow fadeInLeft">Hablamos <h1>Diseño</h1></h2>
-                <p class="text-left wow fadeInLeft" data-wow-delay="0.1s">Nos especializamos en <strong class="pink-text">proyectos creativos de branding y producciones audiovisuales.</strong> Nos tomamos el tiempo para agarrarle la onda a tu negocio, producto o servicio; extraer su esencia y transmitirla de manera adecuada a las personas indicadas.</p>
+                <p class="text-left wow fadeInLeft yellow-text" data-wow-delay="0.1s">Nos especializamos en <strong class="pink-text">proyectos creativos de branding y producciones audiovisuales.</strong> Nos tomamos el tiempo para agarrarle la onda a tu negocio, producto o servicio; extraer su esencia y transmitirla de manera adecuada a las personas indicadas.</p>
                 <!-- <p class="lead">Cambiando el mundo un diseño a la vez.</p> -->
             </div>
             <div class="col-12 offset-md-1 col-md-6">
@@ -53,54 +49,45 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="card text-center">
-                    <a [routerLink]="['/servicios','branding']" title="meraki-branding">
+                    <a [routerLink]="['/servicios','branding']" title="meraki-branding" pageScroll href="#branding">
                         <img class="card-img-top w-75 hvr-grow wow zoomIn" src="assets/img/home/branding.png" alt="Card image cap">
                     </a>
                     <div class="card-body">
-                        <!-- <a href="#">
-                            <h5 class="card-title text-center wow fadeInUp">Branding</h5>
-                        </a> -->
                         <p class="card-text text-center wow fadeInUp">Reflejamos la esencia de tu marca en cada uno de sus elementos.</p>
-                        <a [routerLink]="['/servicios','branding']" class="d-block d-md-none">
-                            <button class="btn btn-meraki btn-block wow fadeIn" role="button" type="button">Ver Más</button>
+                        <a [routerLink]="['/servicios','branding']" class="hvr-wobble-top" pageScroll href="#branding">
+                            <img src="assets/img/ui/see-more-button.png" alt="meraki-creative-studio" class="img-fluid w-75 wow fadeIn" title="meraki-branding">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="card text-center">
-                    <a [routerLink]="['/servicios','startups']" title="meraki-start-ups">
+                    <a [routerLink]="['/servicios','startups']" title="meraki-start-ups" pageScroll href="#startups">
                         <img class="card-img-top w-75 hvr-grow wow zoomIn" src="assets/img/home/start-ups.png" alt="Card image cap" data-wow-delay="0.2s">
                     </a>
                     <div class="card-body">
-                        <!-- <a href="#">
-                            <h5 class="card-title text-center wow fadeInUp">Fotografía</h5>
-                        </a> -->
                         <p class="card-text text-center wow fadeInUp">Capturamos los momentos perfectos para ti y tu empresa.</p>
-                        <a [routerLink]="['/servicios','startups']" class="d-block d-md-none">
-                            <button class="btn btn-meraki btn-block wow fadeIn" role="button" type="button">Ver Más</button>
+                        <a [routerLink]="['/servicios','startups']" class="hvr-wobble-top" pageScroll href="#startups">
+                            <img src="assets/img/ui/see-more-button.png" alt="meraki-creative-studio" class="img-fluid w-75 wow fadeIn hvr-wobble-top" title="meraki-start-up">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="card text-center">
-                    <a [routerLink]="['/servicios','audiovisual']" title="meraki-edición-video">
+                    <a [routerLink]="['/servicios','audiovisual']" title="meraki-edición-video" pageScroll href="#video">
                         <img class="card-img-top w-75 hvr-grow wow zoomIn" src="assets/img/home/edicion-video.png" alt="Card image cap" data-wow-delay="0.1s">
                     </a>
                     <div class="card-body">
-                        <!-- <a href="#">
-                            <h5 class="card-title text-center wow fadeInUp">Producciones Audiovisuales</h5>
-                        </a> -->
                         <p class="card-text text-center wow fadeInUp">Contamos tu historia a través de contenido multimedia.</p>
-                        <a [routerLink]="['/servicios','audiovisual']" class="d-block d-md-none">
-                            <button class="btn btn-meraki btn-block wow fadeIn" role="button" type="button">Ver Más</button>
+                        <a [routerLink]="['/servicios','audiovisual']" class="hvr-wobble-top" pageScroll href="#video">
+                            <img src="assets/img/ui/see-more-button.png" alt="meraki-creative-studio" class="img-fluid w-75 wow fadeIn hvr-wobble-top" title="meraki-edicion-video">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row d-none d-md-flex">
+        <!-- <div class="row d-none d-md-flex">
             <div class="col-12 col-md-4">
                 <a [routerLink]="['/servicios','branding']">
                     <button class="btn btn-meraki btn-block wow fadeInLeft" role="button" type="button">Ver Más</button>
@@ -116,7 +103,7 @@
                     <button class="btn btn-meraki btn-block wow fadeInRight" role="button" type="button">Ver Más</button>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 

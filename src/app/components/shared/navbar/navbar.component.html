@@ -1,36 +1,36 @@
 <!-- NAVBAR
 ================================================== -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" detect-scroll (onScroll)="handleScroll($event)">
-    <a class="navbar-brand" [routerLink]="['/inicio']">
-        <img src="assets/img/meraki-blue.png" width="45" height="45" class="d-inline-block align-top ml-3" alt="meraki-logo">
+    <a class="navbar-brand" [routerLink]="['']" pageScroll href="#intro">
+        <img src="assets/img/ui/meraki-blue.png" width="45" height="45" class="d-inline-block align-top ml-3" alt="meraki-logo" id="navbar-logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['/inicio']">inicio</a>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                <a class="nav-link" [routerLink]="['']" pageScroll href="#intro">inicio</a>
             </li>
             <li class="nav-item dropdown" routerLinkActive="active">
                 <a class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       servicios</a>
                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <a class="dropdown-item" [routerLink]="['/servicios','branding']">branding</a>
+                    <a class="dropdown-item" [routerLink]="['/servicios','branding']" pageScroll href="#branding">branding</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="['/servicios','startups']">start ups</a>
+                    <a class="dropdown-item" [routerLink]="['/servicios','startups']" pageScroll href="#startups">start ups</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="['/servicios','audiovisual']">producción audiovisual</a>
+                    <a class="dropdown-item" [routerLink]="['/servicios','audiovisual']" pageScroll href="#video">producción audiovisual</a>
                 </div>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['/trabajos']">trabajos</a>
+                <a class="nav-link" [routerLink]="['/trabajos']" pageScroll href="#portfolio">trabajos</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['/acerca']">acerca</a>
+                <a class="nav-link" [routerLink]="['/acerca']" pageScroll href="#acerca">acerca</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['/contacto']">contacto</a>
+                <a class="nav-link" [routerLink]="['/contacto']" pageScroll href="#contacto">contacto</a>
             </li>
         </ul>
     </div>

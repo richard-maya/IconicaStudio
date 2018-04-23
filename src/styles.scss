@@ -44,7 +44,7 @@
 *
 -----------------------*/
 *:not(i){
-    font-family: semplicita;
+    font-family: "semplicita";
 }
 
 $fontType: p, h6, h5, h4, h3, h2, h1;
@@ -65,6 +65,12 @@ $modularscale: (
 
 .pink-text{
     color: $meraki-pink;
+}
+.blue-text{
+    color: $meraki-blue;
+}
+.yellow-text{
+    color: $meraki-yellow;
 }
 
 $section-space: ms(3);
@@ -151,12 +157,15 @@ nav.navbar-small{
 
 .yellow-navbar{
     background: $meraki-yellow !important;
-    box-shadow: 0 0 0 0 #000000 !important;    
+    box-shadow: 0 0 0 0 #000000 !important;
 
     a{
         color: white !important;
         &.dropdown-item{
             color: $meraki-blue !important;
+        }
+        &:hover{
+            color: darken($meraki-yellow, 15%) !important;
         }
     }
 
@@ -166,7 +175,6 @@ nav.navbar-small{
 }
 
 footer{
-    // background-color: darken($meraki-yellow, 15%);
     background-color: $meraki-blue;
     width: 100%;
     padding: $footer-space;
@@ -177,6 +185,9 @@ footer{
 
     p{
         font-size: ms(-1);
+        span{
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
     }
 
     p,li a{
@@ -200,6 +211,15 @@ footer{
 iframe{
     border: 1px solid $meraki-yellow !important;
     border-radius: ms(0);
+}
+
+#arrow-row{
+    position: absolute;
+    bottom: ms(2);
+    left: 50%;
+    i{
+        color: $meraki-yellow;
+    }
 }
 
 
@@ -233,23 +253,10 @@ section#intro{
     strong{
         color: $meraki-yellow;
     }
-
-    #arrow-row{
-        position: absolute;
-        bottom: ms(2);
-        left: 50%;
-
-
-        i{
-            color: $meraki-yellow;
-        }
-    }
 }
 
 section#description{
-    background-color: rgba(255,255,0,0);
     padding: 3%;
-    color: $meraki-yellow;
     h1,h2{
         color: $meraki-blue;
     }
@@ -368,6 +375,23 @@ section#contact{
 }
 
 
+/* Services
+*
+-----------------------*/
+section#branding,
+section#startups,
+section#video{
+    position: relative;
+    ul li{
+        font-family: 'satellite';
+        font-size: ms(1);
+    }
+    #arrow-row{
+        bottom: ms(6);
+    }
+}
+
+
 /* Animations
 *
 -----------------------*/
@@ -391,21 +415,3 @@ section#contact{
     opacity: 0;
   }
 }
-//
-// .pulse-animation:hover{
-//   animation: pulseFrames ease-out 2s;
-//   animation-iteration-count: infinite;
-//   transform-origin: 50% 50%;
-// }
-//
-// @keyframes pulseFrames{
-//   0% {
-//     transform:  scale(1)  ;
-//   }
-//   40% {
-//     transform:  scale(1.5)  ;
-//   }
-//   100% {
-//     transform:  scale(1)  ;
-//   }
-// }

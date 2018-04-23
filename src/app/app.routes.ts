@@ -11,7 +11,6 @@ import { VideoComponent } from './components/services/video/video.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'inicio', component: HomeComponent },
   { path: 'trabajos', component: PortfolioComponent },
   { path: 'acerca', component: AboutComponent },
   { path: 'contacto', component: ContactComponent },

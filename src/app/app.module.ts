@@ -30,6 +30,8 @@ import { SitemapComponent } from './components/sitemap/sitemap.component';
 import { BrandingComponent } from './components/services/branding/branding.component';
 import { StartupsComponent } from './components/services/startups/startups.component';
 import { VideoComponent } from './components/services/video/video.component';
+import { ArrowComponent } from './components/shared/arrow/arrow.component';
+import { ContactButtonComponent } from './components/shared/contact-button/contact-button.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { VideoComponent } from './components/services/video/video.component';
     SitemapComponent,
     BrandingComponent,
     StartupsComponent,
-    VideoComponent
+    VideoComponent,
+    ArrowComponent,
+    ContactButtonComponent
   ],
   imports: [
     BrowserModule,

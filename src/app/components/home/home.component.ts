@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoService } from '../../services/info.service';
+declare var $:any;
 
 @Component({
   selector: 'app-home',
@@ -8,11 +9,36 @@ import { InfoService } from '../../services/info.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public _is:InfoService) {
+    public siteFooter(){
+        let mainContent = $('main');
+        let mainContentHeight = mainContent.height();
+        let mainContentWidth = mainContent.width();
 
+        let siteFooter = $('footer');
+        let siteFooterHeight = siteFooter.height();
+        let siteFooterWidth = siteFooter.width();
+
+        mainContent.css('margin-bottom', siteFooterHeight + 25);
+    }
+
+  constructor(public _is:InfoService) {
   }
 
   ngOnInit() {
+      this.siteFooter();
+      $(window).resize(function(){
+          this.siteFooter();
+      })
+
+      $("#contact").waypoint(function(direction){
+  	    if(direction == 'down'){
+  	        $(".navbar").addClass('yellow-navbar');
+            $("#navbar-logo").attr("src","assets/img/ui/meraki-white.png");
+  	    } else {
+  	        $(".navbar").removeClass('yellow-navbar');
+            $("#navbar-logo").attr("src","assets/img/ui/meraki-blue.png");
+  	    }
+    }, {offset: '-20px'});
   }
 
 }
