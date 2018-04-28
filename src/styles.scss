@@ -59,6 +59,10 @@ $modularscale: (
         font-size: ms($i);
         @if $i == 1 {
             font-family: 'satellite';
+            &.lead{
+                font-family: "semplicita";
+                font-size: ms($i+1);
+            }
         }
     }
 }
@@ -259,6 +263,16 @@ section#description{
     padding: 3%;
     h1,h2{
         color: $meraki-blue;
+    }
+    .description-box{
+        padding: 3%;
+        background-color: $meraki-yellow;
+        color: white;
+        letter-spacing: 1px;
+        border-radius: ms(0);
+        strong{
+            color: $meraki-blue;
+        }
     }
 }
 
