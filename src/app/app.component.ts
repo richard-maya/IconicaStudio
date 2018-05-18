@@ -3,6 +3,7 @@ import { NgwWowService } from 'ngx-wow';
 import { Subscription }   from 'rxjs/Subscription';
 import { PageScrollConfig } from 'ng2-page-scroll';
 import { InfoService } from './services/info.service';
+import { PortfolioService } from './services/portfolio.service';
 // import {NgsRevealConfig} from 'ng-scrollreveal';
 declare var $:any;
 
@@ -14,7 +15,7 @@ declare var $:any;
 export class AppComponent implements OnInit {
     private wowSubscription: Subscription;
 
-    constructor(private wowService: NgwWowService, public _is:InfoService){
+    constructor(private wowService: NgwWowService, public _is:InfoService, public _port:PortfolioService){
       this.wowService.init({
           offset:       75,
           mobile:       true

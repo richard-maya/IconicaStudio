@@ -1,0 +1,37 @@
+[ {
+  "client" : "Cowboys vs Indians",
+  "description" : "lorem ipsum",
+  "tags" : "Branding, Motion Graphics",
+  "title" : "Arte para videojuego",
+  "thumb" : "assets/img/portfolio/thumbs/1.jpg"
+}, {
+  "client" : "Cevichería Estero",
+  "description" : "lorem ipsum",
+  "tags" : "Branding, Diseño de Logotipo",
+  "title" : "Diseño de marca",
+  "thumb" : "assets/img/portfolio/thumbs/2.jpg"
+}, {
+  "client" : "Tierra Azteca",
+  "description" : "lorem ipsum",
+  "tags" : "Fotografía, Branding, Diseño Web",
+  "title" : "Actualización de imagen",
+  "thumb" : "assets/img/portfolio/thumbs/3.jpg"
+}, {
+  "client" : "Drone Race",
+  "description" : "lorem ipsum",
+  "tags" : "Motion Graphics, Animación",
+  "title" : "Modelado y animación 3d",
+  "thumb" : "assets/img/portfolio/thumbs/4.jpg"
+}, {
+  "client" : "Tragh",
+  "description" : "lorem ipsum",
+  "tags" : "Diseño Web",
+  "title" : "Diseño de sitio web",
+  "thumb" : "assets/img/portfolio/thumbs/5.jpg"
+}, {
+  "client" : "Inatek",
+  "description" : "lorem ipsum",
+  "tags" : "Branding, Fotografía, Diseño Web",
+  "title" : "Actualización de imagen",
+  "thumb" : "assets/img/portfolio/thumbs/6.jpg"
+} ]

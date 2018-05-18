@@ -154,7 +154,7 @@
 <section id="clients" class="d-flex align-items-center">
     <div class="container">
         <div class="row justify-content-center">
-            <h4 class="mb-5 text-center wow fadeInDown">Clientes que confían en nosotros</h4>
+            <h4 class="mb-5 text-center wow fadeInDown">Empresas que confían en nosotros</h4>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-md-11 col-lg-10">
@@ -201,7 +201,10 @@
                     <p><i class="fas fa-envelope fa-lg"></i> &nbsp; <span>{{_is.info.email}}</span></p>
                 </a>
                 <a href="https://api.whatsapp.com/send?phone={{_is.info.cel}}" class="wow fadeInLeft" data-wow-delay="0.1s">
-                    <p><i class="fab fa-whatsapp-square fa-lg"></i> &nbsp; <span>{{_is.info.celFormat}}</span></p>
+                    <p><i class="fab fa-whatsapp fa-lg"></i> &nbsp; <span>{{_is.info.celFormat}}</span></p>
+                </a>
+                <a href="{{_is.info.messenger}}" class="wow fadeInLeft" data-wow-delay="0.1s">
+                    <p><i class="fab fa-facebook-messenger fa-lg"></i> &nbsp; <span>Escríbenos un mensaje</span></p>
                 </a>
                 <!-- <address class="wow fadeInLeft" data-wow-delay="0.2s">
                     <a href="https://goo.gl/maps/P8YifSkR2S72" target="_blank" rel="external">

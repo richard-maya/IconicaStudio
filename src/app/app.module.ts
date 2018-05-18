@@ -16,6 +16,7 @@ import { app_routing } from './app.routes';
 
 // Services
 import { InfoService } from './services/info.service';
+import { PortfolioService } from './services/portfolio.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -62,7 +63,8 @@ import { ContactButtonComponent } from './components/shared/contact-button/conta
     app_routing
   ],
   providers: [
-      InfoService
+      InfoService,
+      PortfolioService
   ],
   bootstrap: [AppComponent]
 })

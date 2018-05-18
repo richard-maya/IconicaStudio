@@ -1,3 +1,25 @@
-<p>
-  portfolio works!
-</p>
+<main>
+<!-- PORTFOLIO
+================================================== -->
+<section id="portfolio">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="text-center mt-5 mb-5 pt-5 wow fadeInDown yellow-text">Trabajos destacados</h3>
+        </div>
+
+        <div class="row">
+            <div class="grid-item col-12 col-md-6 col-lg-4" *ngFor="let imagenes of _port.portfolioList">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top" [src]="imagenes.thumb" alt="Card image cap">
+                    </a>
+                    <div class="card-body text-center">
+                        <h6 class="card-title">{{imagenes.client}} <br><small>{{imagenes.title}}</small></h6>
+                        <p class="card-text text-muted"><small>{{imagenes.tags}}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>

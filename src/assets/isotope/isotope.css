@@ -1,0 +1,32 @@
+.grid-item{
+    overflow: hidden;
+}
+
+.grid-description{
+    position: absolute;
+    top: 0;    left: 4%;
+    text-align: center;
+    width: 92%;
+    height: 94%;
+    background-color: rgba(255,0,0,0.8);
+    color: white;
+
+    -webkit-transition: all 0.25s ease-in-out;
+       -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+         -o-transition: all 0.25s ease-in-out;
+            transition: all 0.25s ease-in-out;
+    -webkit-transform: translateY(-100%);
+       -moz-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+         -o-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.grid-item:hover .grid-description{
+    -webkit-transform: translateY(0);
+       -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+         -o-transform: translateY(0);
+            transform: translateY(0);
+}

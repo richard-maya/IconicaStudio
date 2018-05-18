@@ -7,7 +7,7 @@ export class InfoService {
     info:any = {};
 
   constructor( public http:Http ) {
-      this.http.get("assets/info.json").subscribe(data=>{
+      this.http.get("assets/data/info.json").subscribe(data=>{
           this.info = data.json();
       });
   }

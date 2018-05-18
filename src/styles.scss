@@ -6,6 +6,7 @@
 @import "././node_modules/modularscale-sass/libsass/scss/main.scss";
 @import "././node_modules/hover.css/scss/hover.scss";
 @import "assets/fontawesome/css/fontawesome-all.min.css";
+// @import "assets/isotope/isotope.css";
 
 /* Fonts
 *
@@ -95,7 +96,7 @@ button.btn{
     background-color: rgba(250,175,65,0);
     border-color: $meraki-yellow;
     color: $meraki-yellow;
-    @include transition(0.5s);
+    @include transition(0.3s);
 
     &:hover, &:focus, &.focus, &:active, &.active{
         color: white;
@@ -107,12 +108,21 @@ button.btn{
     background-color: $meraki-yellow;
     border-color: $meraki-yellow;
     color: $meraki-pink;
-    @include transition(0.5s);
+    @include transition(0.3s);
 
     &:hover, &:focus, &.focus, &:active, &.active{
-        // color: white;
         background-color: darken($meraki-yellow, 15%);
         border-color: darken($meraki-yellow, 15%);
+    }
+}
+.btn-white-outline{
+    background-color: rgba(255,255,255,0);
+    border-color: white;
+    color: white;
+    @include transition(0.3s);
+    &:hover, &:focus, &.focus, &:active, &.active{
+        color: $meraki-blue;
+        background-color: rgba(255,255,255,1);
     }
 }
 
@@ -402,6 +412,31 @@ section#video{
     }
     #arrow-row{
         bottom: ms(6);
+    }
+}
+
+
+/* Portfolio
+*
+-----------------------*/
+section#portfolio{
+    // position: relative;
+
+    .grid-item{
+        .card{
+            border: 0px;
+
+            img{
+                @include transition(0.5s);
+                &:hover{
+                    filter: sepia(0.618);
+                }
+            }
+
+            .card-text small{
+                font-family: 'satellite';
+            }
+        }
     }
 }
 
