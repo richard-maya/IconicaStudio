@@ -8,17 +8,23 @@
         </div>
 
         <div class="row">
-            <div class="grid-item col-12 col-md-6 col-lg-4" *ngFor="let imagenes of _port.portfolioList">
+            <div class="grid-item col-12 col-md-6 col-lg-4" *ngFor="let imagenes of _port.portfolioList; let i = index">
                 <div class="card">
-                    <a href="#">
-                        <img class="card-img-top" [src]="imagenes.thumb" alt="Card image cap">
+                    <a [routerLink]="['/trabajos',i]">
+                        <img class="card-img-top wow fadeIn" [src]="imagenes.thumb" alt="meraki {{imagenes.client}}">
                     </a>
                     <div class="card-body text-center">
-                        <h6 class="card-title">{{imagenes.client}} <br><small>{{imagenes.title}}</small></h6>
-                        <p class="card-text text-muted"><small>{{imagenes.tags}}</small></p>
+                        <h6 class="card-title wow fadeInUp">{{imagenes.client}} <br><small class="text-muted">{{imagenes.title}}</small></h6>
+                        <p class="card-text text-muted wow fadeInUp">
+                            <small *ngFor="let etiquetas of _port.portfolioList.tags">{{etiquetas}}</small>&nbsp;
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <h3 class="text-center yellow-text my-5 wow fadeInDown">Proyectos de Estudio</h3>
         </div>
     </div>
 </section>

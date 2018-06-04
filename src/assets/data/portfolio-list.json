@@ -1,37 +1,43 @@
 [ {
   "client" : "Cowboys vs Indians",
-  "description" : "lorem ipsum",
-  "tags" : "Branding, Motion Graphics",
+  "description" : "Proyecto elaborado para un desarrollador de videojuegos independiente de la Ciudad de México. Realizamos el concepto de los personajes, el escenario y todos los props; así como las animaciones que le dan vida al videojuego.",
+  "tags" : [ "Branding", "Motion Graphics" ],
   "title" : "Arte para videojuego",
-  "thumb" : "assets/img/portfolio/thumbs/1.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/cowboys.jpg",
+  "link" : "https://itunes.apple.com/mx/app/cowboys-vs-indians/id1318462485?l=en&mt=8",
+  "cta" : "Descargar Juego",
+  "images" : [
+      "assets/img/portfolio/cowboys/Bala.png",
+      "assets/img/portfolio/cowboys/Coin.png"
+  ]
+}, {
+  "client" : "RA CAM",
+  "description" : "lorem ipsum",
+  "tags" : "Motion Graphics, Animación",
+  "title" : "Animación y edición de video",
+  "thumb" : "assets/img/portfolio/thumbs/ra-cam.jpg"
 }, {
   "client" : "Cevichería Estero",
   "description" : "lorem ipsum",
   "tags" : "Branding, Diseño de Logotipo",
   "title" : "Diseño de marca",
-  "thumb" : "assets/img/portfolio/thumbs/2.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/estero.jpg"
 }, {
   "client" : "Tierra Azteca",
   "description" : "lorem ipsum",
   "tags" : "Fotografía, Branding, Diseño Web",
   "title" : "Actualización de imagen",
-  "thumb" : "assets/img/portfolio/thumbs/3.jpg"
-}, {
-  "client" : "Drone Race",
-  "description" : "lorem ipsum",
-  "tags" : "Motion Graphics, Animación",
-  "title" : "Modelado y animación 3d",
-  "thumb" : "assets/img/portfolio/thumbs/4.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/tierra-azteca.jpg"
 }, {
   "client" : "Tragh",
   "description" : "lorem ipsum",
   "tags" : "Diseño Web",
   "title" : "Diseño de sitio web",
-  "thumb" : "assets/img/portfolio/thumbs/5.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/tragh.jpg"
 }, {
   "client" : "Inatek",
   "description" : "lorem ipsum",
   "tags" : "Branding, Fotografía, Diseño Web",
   "title" : "Actualización de imagen",
-  "thumb" : "assets/img/portfolio/thumbs/6.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/inatek.jpg"
 } ]

@@ -8,6 +8,7 @@ import { SitemapComponent } from './components/sitemap/sitemap.component';
 import { BrandingComponent } from './components/services/branding/branding.component';
 import { StartupsComponent } from './components/services/startups/startups.component';
 import { VideoComponent } from './components/services/video/video.component';
+import { ProjectComponent } from './components/portfolio/project/project.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const APP_ROUTES: Routes = [
   { path: 'servicios/branding', component: BrandingComponent },
   { path: 'servicios/startups', component: StartupsComponent },
   { path: 'servicios/audiovisual', component: VideoComponent },
+  { path: 'trabajos/:id', component: ProjectComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

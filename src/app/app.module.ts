@@ -33,6 +33,8 @@ import { StartupsComponent } from './components/services/startups/startups.compo
 import { VideoComponent } from './components/services/video/video.component';
 import { ArrowComponent } from './components/shared/arrow/arrow.component';
 import { ContactButtonComponent } from './components/shared/contact-button/contact-button.component';
+import { ProjectComponent } from './components/portfolio/project/project.component';
+import { CowboysComponent } from './components/portfolio/cowboys/cowboys.component';
 
 
 @NgModule({
@@ -50,7 +52,9 @@ import { ContactButtonComponent } from './components/shared/contact-button/conta
     StartupsComponent,
     VideoComponent,
     ArrowComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
+    ProjectComponent,
+    CowboysComponent
   ],
   imports: [
     BrowserModule,

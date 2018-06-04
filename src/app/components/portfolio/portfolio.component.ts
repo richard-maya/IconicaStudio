@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../../services/portfolio.service';
-// import { Portfolio } from '../../interfaces/portfolio.interface';
 declare var $:any;
 
 @Component({
