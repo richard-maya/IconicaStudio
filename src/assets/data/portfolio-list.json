@@ -6,38 +6,41 @@
   "thumb" : "assets/img/portfolio/thumbs/cowboys.jpg",
   "link" : "https://itunes.apple.com/mx/app/cowboys-vs-indians/id1318462485?l=en&mt=8",
   "cta" : "Descargar Juego",
+  "cover" : "assets/img/portfolio/cowboys/homescreen.png",
   "images" : [
-      "assets/img/portfolio/cowboys/Bala.png",
-      "assets/img/portfolio/cowboys/Coin.png"
-  ]
+      "assets/img/portfolio/cowboys/props.jpg",
+      "assets/img/portfolio/cowboys/indio-anim.gif",
+      "assets/img/portfolio/cowboys/vaquero-anim.gif"
+  ],
+  "video" : "273410143"
 }, {
   "client" : "RA CAM",
-  "description" : "lorem ipsum",
-  "tags" : "Motion Graphics, Animación",
-  "title" : "Animación y edición de video",
+  "description" : "Creación de modelos 3D, animaciones y videos que son reproducidos sobre impresos gracias a la Realidad Aumentada, para generar contenido más interactivo.",
+  "tags" : [ "Motion Graphics", "Animación" ],
+  "title" : "Animación y Publicidad con Realidad Aumentada",
   "thumb" : "assets/img/portfolio/thumbs/ra-cam.jpg"
 }, {
   "client" : "Cevichería Estero",
   "description" : "lorem ipsum",
-  "tags" : "Branding, Diseño de Logotipo",
+  "tags" : [ "Branding", "Diseño de Logotipo" ],
   "title" : "Diseño de marca",
   "thumb" : "assets/img/portfolio/thumbs/estero.jpg"
 }, {
   "client" : "Tierra Azteca",
   "description" : "lorem ipsum",
-  "tags" : "Fotografía, Branding, Diseño Web",
+  "tags" : [ "Fotografía", "Branding", "Diseño Web" ],
   "title" : "Actualización de imagen",
   "thumb" : "assets/img/portfolio/thumbs/tierra-azteca.jpg"
 }, {
   "client" : "Tragh",
   "description" : "lorem ipsum",
-  "tags" : "Diseño Web",
+  "tags" : [ "Diseño Web", "Animación de Logotipo" ],
   "title" : "Diseño de sitio web",
   "thumb" : "assets/img/portfolio/thumbs/tragh.jpg"
 }, {
   "client" : "Inatek",
   "description" : "lorem ipsum",
-  "tags" : "Branding, Fotografía, Diseño Web",
-  "title" : "Actualización de imagen",
+  "tags" : [ "Branding", "Fotografía", "Diseño Web" ],
+  "title" : "Branding",
   "thumb" : "assets/img/portfolio/thumbs/inatek.jpg"
 } ]

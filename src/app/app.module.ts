@@ -35,6 +35,7 @@ import { ArrowComponent } from './components/shared/arrow/arrow.component';
 import { ContactButtonComponent } from './components/shared/contact-button/contact-button.component';
 import { ProjectComponent } from './components/portfolio/project/project.component';
 import { CowboysComponent } from './components/portfolio/cowboys/cowboys.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { CowboysComponent } from './components/portfolio/cowboys/cowboys.compone
     ArrowComponent,
     ContactButtonComponent,
     ProjectComponent,
-    CowboysComponent
+    CowboysComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,

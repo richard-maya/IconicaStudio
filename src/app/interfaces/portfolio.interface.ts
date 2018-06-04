@@ -7,4 +7,6 @@ export interface Portfolio {
     link?:string;
     cta?:string;
     images?:object;
+    cover?:string;
+    video?:string;
 }

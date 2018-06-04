@@ -3,23 +3,41 @@
 ================================================== -->
 <section id="project">
     <div class="container">
-        <div class="row justify-content-center mt-5">
-            <div class="col-12 col-md-10 col-lg-8 pt-3">
-                <!-- <img [src]="proyecto.images.uno" alt="" class="img-fluid"> -->
-                <img [src]="imagenes" alt="" *ngFor="let imagenes of proyecto.images">
+        <div class="row justify-content-center mt-5 pt-4">
+            <div class="col-12 col-md-10 mb-5">
+                <a [href]="proyecto.cover" data-lightbox="roadtrip" data-title="{{proyecto.client}} | {{proyecto.title}}">
+                    <img [src]="proyecto.cover" alt="proyecto.client" class="img-fluid">
+                </a>
             </div>
-            <div class="col-12 col-md-10 col-lg-4">
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10 col-lg-8">
                 <h3 class="text-center py-3 wow fadeInDown yellow-text">{{proyecto.client}}</h3>
                 <h6 class="text-center text-muted">{{proyecto.title}}</h6>
-                <p class="mb-5">{{proyecto.description}}</p>
+                <p class="mb-4">{{proyecto.description}}</p>
                 <p class="text-right mb-3">Categorías:
-                    <a href="#" title="{{proyecto.tags}}">
-                        <span class="badge badge-secondary">{{proyecto.tags}}</span>
+                    <a href="#" title="{{proyecto.tags}}" *ngFor="let etiquetas of proyecto.tags">
+                        <span class="badge badge-warning">{{etiquetas}}</span>&nbsp;
                     </a>
                 </p>
                 <a [href]="proyecto.link" target="_blank" rel="external" *ngIf="proyecto.cta">
                     <button type="button" name="button" role="button" class="btn btn-meraki-outline btn-block">{{proyecto.cta}}</button>
                 </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center align-items-center mt-4 mb-5">
+            <div class="col-12 col-md-4 col-lg-3" *ngFor="let imagenes of proyecto.images">
+                <a [href]="imagenes" data-lightbox="roadtrip" data-title="{{proyecto.client}} | {{proyecto.title}}">
+                    <img [src]="imagenes" alt="proyecto.tags" class="img-fluid">
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div style="padding:56.16% 0 0 0;position:relative;"><iframe [src]="proyecto.video | domseguro:'https://player.vimeo.com/video/'" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
             </div>
         </div>
     </div>

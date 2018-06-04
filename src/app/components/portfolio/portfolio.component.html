@@ -16,7 +16,7 @@
                     <div class="card-body text-center">
                         <h6 class="card-title wow fadeInUp">{{imagenes.client}} <br><small class="text-muted">{{imagenes.title}}</small></h6>
                         <p class="card-text text-muted wow fadeInUp">
-                            <small *ngFor="let etiquetas of _port.portfolioList.tags">{{etiquetas}}</small>&nbsp;
+                            <small *ngFor="let etiquetas of imagenes.tags">{{etiquetas}},&nbsp;&nbsp;</small>
                         </p>
                     </div>
                 </div>
