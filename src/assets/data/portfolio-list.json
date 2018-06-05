@@ -18,29 +18,94 @@
   "description" : "Creación de modelos 3D, animaciones y videos que son reproducidos sobre impresos gracias a la Realidad Aumentada, para generar contenido más interactivo.",
   "tags" : [ "Motion Graphics", "Animación" ],
   "title" : "Animación y Publicidad con Realidad Aumentada",
-  "thumb" : "assets/img/portfolio/thumbs/ra-cam.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/ra-cam.jpg",
+  "cta" : "Contrata RA",
+  "cover" : "assets/img/portfolio/racam/racam-cover.jpg",
+  "video" : "273538422"
 }, {
   "client" : "Cevichería Estero",
-  "description" : "lorem ipsum",
+  "description" : "Creación de identidad corporativa para una cvichería en la Ciudad de Puebla. Diseño de aplicaciones principalmente.",
   "tags" : [ "Branding", "Diseño de Logotipo" ],
-  "title" : "Diseño de marca",
-  "thumb" : "assets/img/portfolio/thumbs/estero.jpg"
+  "title" : "Diseño de identidad corporativa",
+  "thumb" : "assets/img/portfolio/thumbs/estero.jpg",
+  "cover" : "assets/img/portfolio/estero/estero-cover.jpg",
+  "link" : "https://www.facebook.com/EsteroCevicheriaPuebla",
+  "cta" : "Visitar Página de Facebook",
+  "images" : [
+      "assets/img/portfolio/estero/estero-mockup-1.jpg",
+      "assets/img/portfolio/estero/estero-mockup-2.jpg",
+      "assets/img/portfolio/estero/M_01.JPG",
+      "assets/img/portfolio/estero/M_02.JPG",
+      "assets/img/portfolio/estero/M_03.JPG",
+      "assets/img/portfolio/estero/M_04.JPG",
+      "assets/img/portfolio/estero/Playera_back.jpg",
+      "assets/img/portfolio/estero/Playera_frente.jpg"
+  ]
 }, {
   "client" : "Tierra Azteca",
-  "description" : "lorem ipsum",
+  "description" : "Proyecto multidisciplinario que involucró fotografía de producto, diseño y desarrollo de sitio web y diseño de papelería.",
   "tags" : [ "Fotografía", "Branding", "Diseño Web" ],
-  "title" : "Actualización de imagen",
-  "thumb" : "assets/img/portfolio/thumbs/tierra-azteca.jpg"
-}, {
-  "client" : "Tragh",
-  "description" : "lorem ipsum",
-  "tags" : [ "Diseño Web", "Animación de Logotipo" ],
-  "title" : "Diseño de sitio web",
-  "thumb" : "assets/img/portfolio/thumbs/tragh.jpg"
+  "title" : "Identidad corporativa",
+  "thumb" : "assets/img/portfolio/thumbs/tierra-azteca.jpg",
+  "link" : "https://tierra-azteca.com",
+  "cta" : "Visitar Sitio Web",
+  "cover" : "assets/img/portfolio/tierrazteca/tierrazteca-cover.jpg",
+  "images" : [
+      "assets/img/portfolio/tierrazteca/mock-1.jpg",
+      "assets/img/portfolio/tierrazteca/mock-2.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-2.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-9.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-12.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-16.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-23.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-26.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-27.jpg",
+      "assets/img/portfolio/tierrazteca/tierra-azteca-28.jpg"
+  ]
 }, {
   "client" : "Inatek",
-  "description" : "lorem ipsum",
+  "description" : "Proyecto multidisciplinario que involucró diseño y desarrollo web, fotografía de la planta de producción y diseño de papelería y aplicaciones básicas.",
   "tags" : [ "Branding", "Fotografía", "Diseño Web" ],
   "title" : "Branding",
-  "thumb" : "assets/img/portfolio/thumbs/inatek.jpg"
+  "thumb" : "assets/img/portfolio/thumbs/inatek.jpg",
+  "link" : "https://inatek.com.mx",
+  "cta" : "Visitar Sitio Web",
+  "cover" : "assets/img/portfolio/inatek/inatek-cover.jpg",
+  "images" : [
+      "assets/img/portfolio/inatek/app-1.jpg",
+      "assets/img/portfolio/inatek/app-2.jpg",
+      "assets/img/portfolio/inatek/app-3.jpg",
+      "assets/img/portfolio/inatek/app-4.jpg",
+      "assets/img/portfolio/inatek/app-5.jpg",
+      "assets/img/portfolio/inatek/app-6.jpg",
+      "assets/img/portfolio/inatek/app-7.jpg",
+      "assets/img/portfolio/inatek/foto-1.jpg",
+      "assets/img/portfolio/inatek/foto-2.jpg",
+      "assets/img/portfolio/inatek/foto-3.jpg",
+      "assets/img/portfolio/inatek/foto-4.jpg",
+      "assets/img/portfolio/inatek/foto-5.jpg",
+      "assets/img/portfolio/inatek/foto-6.jpg",
+      "assets/img/portfolio/inatek/foto-7.jpg",
+      "assets/img/portfolio/inatek/foto-8.jpg",
+      "assets/img/portfolio/inatek/mock-1.jpg",
+      "assets/img/portfolio/inatek/mock-2.jpg",
+      "assets/img/portfolio/inatek/mock-3.jpg"
+  ]
+}, {
+  "client" : "Tragh",
+  "description" : "Diseño y desarrollo de sitio web y animación de logotipo para cortinillas en eventos y videos en redes sociales.",
+  "tags" : [ "Diseño Web", "Animación de Logotipo" ],
+  "title" : "Diseño de sitio web",
+  "thumb" : "assets/img/portfolio/thumbs/tragh.jpg",
+  "link" : "https://tragh.mx",
+  "cta" : "Visitar Sitio Web",
+  "video" : "273548556",
+  "cover" : "assets/img/portfolio/tragh/tragh-cover.jpg",
+  "images" : [
+      "assets/img/portfolio/tragh/mock-1.jpg",
+      "assets/img/portfolio/tragh/mock-2.jpg",
+      "assets/img/portfolio/tragh/mock-3.jpg",
+      "assets/img/portfolio/tragh/mock-4.jpg",
+      "assets/img/portfolio/tragh/mock-5.jpg"
+  ]
 } ]

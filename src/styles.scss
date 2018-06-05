@@ -123,7 +123,7 @@ button.btn{
     color: white;
     @include transition(0.3s);
     &:hover, &:focus, &.focus, &:active, &.active{
-        color: $meraki-blue;
+        color: black;
         background-color: rgba(255,255,255,1);
     }
 }
@@ -178,7 +178,7 @@ nav.navbar-small{
     a{
         color: white !important;
         &.dropdown-item{
-            color: $meraki-blue !important;
+            color: black !important;
         }
         &:hover{
             color: darken($meraki-yellow, 15%) !important;
@@ -186,12 +186,12 @@ nav.navbar-small{
     }
 
     .active{
-        color: $meraki-blue !important;
+        color: black !important;
     }
 }
 
 footer{
-    background-color: $meraki-blue;
+    background-color: black;
     width: 100%;
     padding: $footer-space;
     color: $meraki-yellow;
@@ -253,7 +253,7 @@ section#intro{
     position: relative;
 
     padding: $section-space*3 0px;
-    color: $meraki-blue;
+    color: black;
 
     div#divider{
         height: 1px;
@@ -274,7 +274,7 @@ section#intro{
 section#description{
     padding: 3%;
     h1,h2{
-        color: $meraki-blue;
+        color: black;
     }
     .description-box{
         padding: 3%;
@@ -283,7 +283,7 @@ section#description{
         letter-spacing: 1px;
         border-radius: ms(0);
         strong{
-            color: $meraki-blue;
+            color: black;
         }
     }
 }
@@ -294,7 +294,7 @@ section#services{
     }
 
     h1, a{
-        color: $meraki-blue;
+        color: black;
         @include transition (0.5s);
     }
 
@@ -310,7 +310,7 @@ section#about{
     }
 
     h6, p{
-        color: $meraki-blue;
+        color: black;
     }
     p{
         font-size: ms(2);
@@ -354,7 +354,7 @@ section#about{
 section#clients,
 section#instagram{
     h4{
-        color: $meraki-blue;
+        color: black;
     }
 }
 
@@ -371,7 +371,7 @@ section#contact{
     min-height: 100vh;
 
     h4{
-        color: $meraki-blue;
+        color: black;
     }
 
     a{

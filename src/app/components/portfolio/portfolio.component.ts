@@ -9,15 +9,7 @@ declare var $:any;
 })
 export class PortfolioComponent implements OnInit {
 
-    grid:any = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'masonry',
-        percentPosition: true
-    });
-
-  constructor( public _port:PortfolioService ) {
-      this.grid.isotope({ filter: '*' });
-  }
+  constructor( public _port:PortfolioService ) { }
 
   public siteFooter(){
       let mainContent = $('main');

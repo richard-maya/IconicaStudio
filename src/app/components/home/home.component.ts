@@ -33,12 +33,12 @@ export class HomeComponent implements OnInit {
       $("#contact").waypoint(function(direction){
   	    if(direction == 'down'){
   	        $(".navbar").addClass('yellow-navbar');
-            $("#navbar-logo").attr("src","assets/img/ui/meraki-white.png");
+            $("#navbar-logo").attr("src","assets/img/ui/menu-logo-white.png");
   	    } else {
   	        $(".navbar").removeClass('yellow-navbar');
-            $("#navbar-logo").attr("src","assets/img/ui/meraki-blue.png");
+            $("#navbar-logo").attr("src","assets/img/ui/menu-logo.png");
   	    }
-    }, {offset: '-20px'});
+    }, {offset: '-0px'});
   }
 
 }

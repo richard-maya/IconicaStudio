@@ -24,10 +24,6 @@ export class ProjectComponent implements OnInit {
         mainContent.css('margin-bottom', siteFooterHeight + 25);
     }
 
-    public fireSwipebox(){
-        $( '.swipebox' ).swipebox();
-    }
-
   constructor( private actRoute:ActivatedRoute,
                 private _projects:PortfolioService
   ) {
