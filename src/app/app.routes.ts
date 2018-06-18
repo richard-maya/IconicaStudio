@@ -14,7 +14,7 @@ const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'trabajos', component: PortfolioComponent },
   { path: 'acerca', component: AboutComponent },
-  { path: 'contacto', component: ContactComponent },
+  { path: 'contacto', component: HomeComponent },
   { path: 'privacidad', component: PrivacyComponent },
   { path: 'sitemap', component: SitemapComponent },
   { path: 'servicios/branding', component: BrandingComponent },

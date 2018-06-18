@@ -25,6 +25,12 @@
     font-style: normal;
     font-weight: 700;
 }
+@font-face {
+    font-family: 'behemoth';
+    src:url('assets/fonts/Behemoth/Behemoth-Distressed-Webfont.woff');
+    font-style: normal;
+    // font-weight: 400;
+}
 
 
 /* Mixins
@@ -71,13 +77,13 @@ $modularscale: (
 }
 
 .pink-text{
-    color: $meraki-pink;
+    color: $iconica-pink;
 }
 .blue-text{
-    color: $meraki-blue;
+    color: $iconica-blue;
 }
 .yellow-text{
-    color: $meraki-yellow;
+    color: $iconica-yellow;
 }
 
 $section-space: ms(3);
@@ -94,27 +100,27 @@ button.btn{
         cursor: not-allowed;
     }
 }
-.btn-meraki-outline{
+.btn-iconica-outline{
     background-color: rgba(250,175,65,0);
-    border-color: $meraki-yellow;
-    color: $meraki-yellow;
+    border-color: $iconica-yellow;
+    color: $iconica-yellow;
     @include transition(0.3s);
 
     &:hover, &:focus, &.focus, &:active, &.active{
         color: white;
         background-color: rgba(250,175,65,1);
-        border-color: $meraki-yellow;
+        border-color: $iconica-yellow;
     }
 }
-.btn-meraki{
-    background-color: $meraki-yellow;
-    border-color: $meraki-yellow;
-    color: $meraki-pink;
+.btn-iconica{
+    background-color: $iconica-yellow;
+    border-color: $iconica-yellow;
+    color: $iconica-pink;
     @include transition(0.3s);
 
     &:hover, &:focus, &.focus, &:active, &.active{
-        background-color: darken($meraki-yellow, 15%);
-        border-color: darken($meraki-yellow, 15%);
+        background-color: darken($iconica-yellow, 15%);
+        border-color: darken($iconica-yellow, 15%);
     }
 }
 .btn-white-outline{
@@ -172,7 +178,7 @@ nav.navbar-small{
 }
 
 .yellow-navbar{
-    background: $meraki-yellow !important;
+    background: $iconica-yellow !important;
     box-shadow: 0 0 0 0 #000000 !important;
 
     a{
@@ -181,7 +187,7 @@ nav.navbar-small{
             color: black !important;
         }
         &:hover{
-            color: darken($meraki-yellow, 15%) !important;
+            color: darken($iconica-yellow, 15%) !important;
         }
     }
 
@@ -190,14 +196,22 @@ nav.navbar-small{
     }
 }
 
+.white-navbar{
+    background: white !important;
+}
+
 footer{
     background-color: black;
     width: 100%;
     padding: $footer-space;
-    color: $meraki-yellow;
+    color: $iconica-yellow;
     position: fixed;
     z-index: 1;
     left: 0;    bottom: 0;
+
+    img{
+        max-height: 130px;
+    }
 
     p{
         font-size: ms(-1);
@@ -216,16 +230,16 @@ footer{
     }
 
     a{
-        color: $meraki-yellow;
+        color: $iconica-yellow;
         &:hover{
-            color: darken($meraki-yellow, 15%);
+            color: darken($iconica-yellow, 15%);
             @include transition(0.3s);
         }
     }
 }
 
 iframe{
-    border: 1px solid $meraki-yellow !important;
+    border: 1px solid $iconica-yellow !important;
     border-radius: ms(0);
 }
 
@@ -234,7 +248,7 @@ iframe{
     bottom: ms(2);
     left: 50%;
     i{
-        color: $meraki-yellow;
+        color: $iconica-yellow;
     }
 }
 
@@ -256,9 +270,9 @@ section#intro{
     color: black;
 
     div#divider{
-        height: 1px;
+        height: 2px;
         width: 100%;
-        background-color: $meraki-yellow;
+        background-color: $iconica-yellow;
     }
 
     p.lead{
@@ -267,7 +281,7 @@ section#intro{
     }
 
     strong{
-        color: $meraki-yellow;
+        color: $iconica-yellow;
     }
 }
 
@@ -278,7 +292,7 @@ section#description{
     }
     .description-box{
         padding: 3%;
-        background-color: $meraki-yellow;
+        background-color: $iconica-yellow;
         color: white;
         letter-spacing: 1px;
         border-radius: ms(0);
@@ -299,55 +313,7 @@ section#services{
     }
 
     a:hover{
-        color: $meraki-pink;
-    }
-}
-
-section#about{
-    h3{
-        color: $meraki-yellow;
-        font-size: 3rem;
-    }
-
-    h6, p{
-        color: black;
-    }
-    p{
-        font-size: ms(2);
-    }
-
-    div#about-text{
-        padding: 20px 3%;
-    }
-
-    blockquote p{
-        color: $meraki-pink;
-        font-weight: 900;
-        font-size: ms(2);
-        width: 90%;
-    }
-
-    div#about-image{
-        background-image: url('assets/img/home/meraki-significado-meaning.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-
-        width: 100%;
-        height: 510px;
-        max-width: 510px;
-        max-height: 510px;
-
-        div#about-image-text{
-            padding: 2%;
-
-            h4{
-                color: $meraki-yellow;
-            }
-            p{
-                color: white;
-                font-weight: 900;
-            }
-        }
+        color: $iconica-pink;
     }
 }
 
@@ -366,7 +332,7 @@ section#instagram{
 }
 
 section#contact{
-    background-color: $meraki-yellow;
+    background-color: $iconica-yellow;
     position: relative;
     min-height: 100vh;
 
@@ -378,7 +344,7 @@ section#contact{
         color: white;
 
         &:hover{
-            color: darken($meraki-yellow, 15%);
+            color: darken($iconica-yellow, 15%);
             @include transition(0.3s);
         }
     }
@@ -441,8 +407,70 @@ section#portfolio{
         }
     }
 }
-section#project{
-    // position: relative;
+
+
+/* About
+*
+-----------------------*/
+section#meaning{
+    background-image: url('assets/img/ui/iconica_pattern.png');
+    background-repeat: repeat;
+
+    .words{
+        background-color: white;
+        border: 5px solid $iconica-blue;
+        span{
+            font-size: ms(3);
+        }
+    }
+
+    #title{
+        background-color: $iconica-yellow;
+        color: white;
+        border: 5px solid $iconica-blue;
+        h1{
+            font-family: 'behemoth';
+            letter-spacing: ms(2);
+            font-size: ms(8);
+        }
+    }
+}
+
+section#about{
+    h3{
+        color: $iconica-yellow;
+        font-size: 3rem;
+    }
+
+    h6, p{
+        color: black;
+    }
+    p{
+        font-size: ms(2);
+    }
+
+    div#about-text{
+        padding: 20px 3%;
+    }
+
+    blockquote p{
+        color: $iconica-pink;
+        font-weight: 900;
+        font-size: ms(2);
+        width: 90%;
+    }
+
+    div#about-image{
+        background-image: url('assets/img/ui/iconica-circle.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+
+        width: 100%;
+        height: 500px;
+        max-width: 500px !important;
+        max-height: 500px;
+    }
 }
 
 

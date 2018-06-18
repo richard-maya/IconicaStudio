@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
   	        $(".navbar").removeClass('yellow-navbar');
             $("#navbar-logo").attr("src","assets/img/ui/menu-logo.png");
   	    }
-    }, {offset: '-0px'});
+    }, {offset: '0px'});
   }
 
 }

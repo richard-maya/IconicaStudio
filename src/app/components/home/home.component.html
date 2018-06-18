@@ -5,13 +5,9 @@
     <div class="container">
         <div class="row">
             <div class="col col-md-5">
-                <img src="assets/img/home/meraki-typo.png" alt="meraki-creative-studio" class="img-fluid wow fadeInDown mb-4" data-wow-delay="0.3s">
-                <!-- <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.4s">Transformamos ideas de emprendedores, start ups y negocios en grandes experiencias.</h5> -->
+                <img src="assets/img/home/iconica-typo-black.png" alt="meraki-creative-studio" class="img-fluid wow fadeInDown mb-4" data-wow-delay="0.3s">
                 <div id="divider" class="mt-3 mb-4 wow fadeInLeft" data-wow-delay="0.5s"></div>
-                <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.6s">Transformamos las ideas de emprendedores, start ups y negocios en <strong>experiencias únicas.</strong></h5>
-
-                <!-- <p class="lead font-italic wow fadeInLeft" data-wow-delay="0.6s">We <strong>design</strong> to delight.</p> -->
-                <!-- <p class="lead font-italic">Thinking made Visual… that's <strong>Design.</strong></p> -->
+                <h5 class="mb-3 wow fadeInLeft" data-wow-delay="0.6s">Somos un estudio creativo en el que transformamos las ideas de startups, emprendedores y empresas en <strong>experiencias únicas.</strong></h5>
             </div>
         </div>
         <app-arrow></app-arrow>
@@ -110,13 +106,12 @@
 
 <!-- ABOUT
 ================================================== -->
-<section id="about" class="d-flex align-items-center hero">
+<!-- <section id="about" class="d-flex align-items-center hero">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-12 col-md-7" id="about-text">
                 <h3 class="mb-3">¿Quiénes somos?</h3>
                 <h6 class="wow fadeIn">Somos un estudio mexicano profesional de diseño gráfico y producción audiovisual.</h6>
-                <!-- <p class="wow fadeIn" data-wow-delay="0.1s">Ayudamos a pequeñas y medianas empresas a que su imagen trascienda y logre crear un impacto en las personas. Desde la concepción del nombre, hasta la creación de campañas de mercadotecnia, en Meraki hacemos todo para que tu marca luzca profesional.</p> -->
                 <p class="wow fadeIn" data-wow-delay="0.1s">Ayudamos a pequeñas y medianas empresas a que su imagen trascienda y logre crear un impacto en las personas.</p>
                 <blockquote class="blockquote text-center wow fadeIn" data-wow-delay="0.2s">
                     <p class="mb-0"><i class="fas fa-quote-left"></i> &nbsp; Dedicación, pasión y creatividad en cada proyecto que elaboramos. &nbsp; <i class="fas fa-quote-right"></i></p>
@@ -130,7 +125,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 <!-- PROJECTS
@@ -138,7 +133,7 @@
 <section id="instagram">
     <div class="container mb-5">
         <div class="row justify-content-center">
-            <h4 class="mb-4 text-center wow fadeInDown">Proyectos Recientes</h4>
+            <h4 class="mb-4 text-center wow fadeInDown">Icónica en Instagram</h4>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
@@ -197,20 +192,23 @@
         <div class="row d-flex align-items-center">
             <div class="col-12 col-md-4 col-lg-5" id="contact-info">
                 <h4 class="display-4 wow fadeInDown">¿Cuándo empezamos?</h4>
-                <a href="mailto:{{_is.info.email}}" class="wow fadeInLeft">
-                    <p><i class="fas fa-envelope fa-lg"></i> &nbsp; <span>{{_is.info.email}}</span></p>
-                </a>
-                <a href="https://api.whatsapp.com/send?phone={{_is.info.cel}}" class="wow fadeInLeft" data-wow-delay="0.1s">
-                    <p><i class="fab fa-whatsapp fa-lg"></i> &nbsp; <span>{{_is.info.celFormat}}</span></p>
-                </a>
-                <a href="{{_is.info.messenger}}" class="wow fadeInLeft" data-wow-delay="0.1s">
-                    <p><i class="fab fa-facebook-messenger fa-lg"></i> &nbsp; <span>Escríbenos un mensaje</span></p>
-                </a>
-                <!-- <address class="wow fadeInLeft" data-wow-delay="0.2s">
-                    <a href="https://goo.gl/maps/P8YifSkR2S72" target="_blank" rel="external">
-                        <p><i class="fas fa-map-marker-alt fa-lg"></i> &nbsp; <span>Eucalipto 220, Casa Blanca. <br>CP. 52171. Metepec, MEX.</span></p>
+                <address class="wow fadeInLeft">
+                    <a href="https://goo.gl/maps/PgvxJ4gERo42" target="_blank" rel="external">
+                        <p><i class="fas fa-map-marker-alt fa-lg"></i> &nbsp; <span>{{_is.info.address1}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{_is.info.address2}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{_is.info.address3}}</span></p>
                     </a>
-                </address> -->
+                </address>
+                <a href="tel:{{_is.info.phone}}">
+                    <p class="wow fadeInLeft" data-wow-delay="0.1s"><i class="fas fa-phone fa-lg"></i> &nbsp; <span>{{_is.info.phoneFormat}}</span></p>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone={{_is.info.cel}}">
+                    <p class="wow fadeInLeft" data-wow-delay="0.2s"><i class="fab fa-whatsapp fa-lg"></i> &nbsp; <span>{{_is.info.celFormat}}</span></p>
+                </a>
+                <a href="mailto:{{_is.info.email}}">
+                    <p class="wow fadeInLeft" data-wow-delay="0.3s"><i class="fas fa-envelope fa-lg"></i> &nbsp; <span>{{_is.info.email}}</span></p>
+                </a>
+                <!-- <a href="{{_is.info.messenger}}" class="wow fadeInLeft" data-wow-delay="0.1s">
+                    <p><i class="fab fa-facebook-messenger fa-lg"></i> &nbsp; <span>Escríbenos un mensaje</span></p>
+                </a> -->
             </div>
             <div class="col-12 col-md-8 col-lg-7 d-flex align-items-center justify-content-around" id="contact-image">
                 <a [href]="_is.info.facebook" target="_blank" rel="external" title="meraki-facebook">
