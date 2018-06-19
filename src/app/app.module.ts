@@ -36,6 +36,7 @@ import { ContactButtonComponent } from './components/shared/contact-button/conta
 import { ProjectComponent } from './components/portfolio/project/project.component';
 import { CowboysComponent } from './components/portfolio/cowboys/cowboys.component';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
     ContactButtonComponent,
     ProjectComponent,
     CowboysComponent,
-    DomseguroPipe
+    DomseguroPipe,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

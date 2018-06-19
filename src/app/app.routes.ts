@@ -9,6 +9,7 @@ import { BrandingComponent } from './components/services/branding/branding.compo
 import { StartupsComponent } from './components/services/startups/startups.component';
 import { VideoComponent } from './components/services/video/video.component';
 import { ProjectComponent } from './components/portfolio/project/project.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -17,11 +18,12 @@ const APP_ROUTES: Routes = [
   { path: 'contacto', component: HomeComponent },
   { path: 'privacidad', component: PrivacyComponent },
   { path: 'sitemap', component: SitemapComponent },
+  { path: '404', component: NotfoundComponent },
   { path: 'servicios/branding', component: BrandingComponent },
   { path: 'servicios/startups', component: StartupsComponent },
   { path: 'servicios/audiovisual', component: VideoComponent },
   { path: 'trabajos/:id', component: ProjectComponent },
-  { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
+  { path: '**', pathMatch: 'full', redirectTo: '404' }
 ];
 
 export const app_routing = RouterModule.forRoot(APP_ROUTES);

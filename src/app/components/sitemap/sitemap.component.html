@@ -1,3 +1,76 @@
-<p>
-  sitemap works!
-</p>
+<main>
+<!-- SITEMAP
+================================================== -->
+<section id="sitemap">
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <h3 class="text-center my-5 pt-5 wow fadeInDown yellow-text">Mapa del sitio</h3>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <h6 class="yellow-text">General</h6>
+                <div class="list-group wow fadeIn">
+                    <a [routerLink]="['/']" class="list-group-item list-group-item-action">
+                        inicio
+                    </a>
+                    <a [routerLink]="['/trabajos']" class="list-group-item list-group-item-action">
+                        trabajos
+                    </a>
+                    <a [routerLink]="['/acerca']" class="list-group-item list-group-item-action">
+                        acerca
+                    </a>
+                    <a [routerLink]="['/contacto']" class="list-group-item list-group-item-action">
+                        contacto
+                    </a>
+                    <a [routerLink]="['/privacidad']" class="list-group-item list-group-item-action">
+                        aviso de privacidad
+                    </a>
+                    <a [routerLink]="['/sitemap']" class="list-group-item list-group-item-action">
+                        mapa del sitio
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <h6 class="yellow-text">Servicios</h6>
+                <div class="list-group wow fadeIn">
+                    <a [routerLink]="['/servicios','branding']" class="list-group-item list-group-item-action">
+                        branding
+                    </a>
+                    <a [routerLink]="['/servicios','startups']" class="list-group-item list-group-item-action">
+                        startups
+                    </a>
+                    <a [routerLink]="['/servicios','audiovisual']" class="list-group-item list-group-item-action">
+                        producciones audiovisuales
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                <h6 class="yellow-text">Redes Sociales</h6>
+                <div class="list-group wow fadeIn">
+                    <a [href]="_is.info.facebook" target="_blank" rel="alternate" class="list-group-item list-group-item-action">
+                        facebook
+                    </a>
+                    <a [href]="_is.info.instagram" target="_blank" rel="alternate" class="list-group-item list-group-item-action">
+                        instagram
+                    </a>
+                    <a [href]="_is.info.pinterest" target="_blank" rel="alternate" class="list-group-item list-group-item-action">
+                        pinterest
+                    </a>
+                    <a [href]="_is.info.behance" target="_blank" rel="alternate" class="list-group-item list-group-item-action">
+                        behance
+                    </a>
+                    <a [href]="_is.info.linkedin" target="_blank" rel="alternate" class="list-group-item list-group-item-action">
+                        linkedin
+                    </a>
+                    <a [href]="_is.info.vimeo" target="_blank" rel="alternate" class="list-group-item list-group-item-action">
+                        vimeo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>

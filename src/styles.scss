@@ -258,10 +258,13 @@ iframe{
 -----------------------*/
 section#intro{
     // transform: translateZ(0px);
-    background-image: url('/assets/img/home/home-photo.jpg');
-    background-size: 100% auto;
-    background-position: top right;
-    background-repeat: no-repeat;
+    @include media-breakpoint-up(md) {
+        background-image: url('/assets/img/home/home-photo.jpg');
+        background-size: 100% auto;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+    background-color: white;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -354,6 +357,12 @@ section#contact{
     }
 
     div#contact-image{
+        @include media-breakpoint-down(sm) {
+            height: 300px;
+            i{
+                font-size: ms(4);
+            }
+        }
         height: 100vh; width: 100%;
         background-image: url('assets/img/home/Foto_Contacto-01.png');
         background-size: 100% auto;
@@ -415,6 +424,7 @@ section#portfolio{
 section#meaning{
     background-image: url('assets/img/ui/iconica_pattern.png');
     background-repeat: repeat;
+    background-attachment: fixed;
 
     .words{
         background-color: white;
@@ -474,6 +484,70 @@ section#about{
 }
 
 
+/* Not Found
+*
+-----------------------*/
+section#notfound{
+    height: 100vh;
+    width: 100%;
+
+    h3{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        z-index: 4;
+        @include media-breakpoint-down(md){
+            top: 15%;
+        }
+    }
+
+    a{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        z-index: 10;
+        @include media-breakpoint-down(md){
+            top: 35%;
+        }
+    }
+
+    .EdificiosAzules{
+        position: absolute;
+        bottom: 20px; left: 0px;
+        z-index: 5;
+        opacity: 0.9;
+    }
+    .EdificiosAmarillos{
+        position: absolute;
+        bottom: 25px; left: 0px;
+        z-index: 6;
+    }
+    .Pasto{
+        position: absolute;
+        bottom: 0px; left: 0px;
+        z-index: 4;
+    }
+    .Ballena{
+        position: absolute;
+        top: 10%; left: 5%;
+        z-index: 3;
+        @include media-breakpoint-down(md){
+            top: 50%;
+        }
+    }
+    .Autos{
+        position: absolute;
+        bottom: 0px;    left: 0px;
+        z-index: 7;
+    }
+    .NinaBicicleta{
+        position: absolute;
+        bottom: 25px;    right: 0px;
+        z-index: 5;
+    }
+}
+
+
 /* Animations
 *
 -----------------------*/
@@ -495,5 +569,38 @@ section#about{
   100% {
     transform:  translate(0px,-20px)  ;
     opacity: 0;
+  }
+}
+
+.girl-animation{
+  animation: girlFrames ease-out 12s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes girlFrames{
+    0% {
+      transform:  translate(-100%,0px)  ;
+    }
+  20% {
+    transform:  translate(-100%,0px)  ;
+  }
+  100% {
+    transform:  translate(0%,0px)  ;
+  }
+}
+
+.building-animation{
+  animation: buildingFrames ease-out 1.5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes buildingFrames{
+    0% {
+      opacity: 0;
+    }
+  100% {
+    opacity: 0.9;
   }
 }

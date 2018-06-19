@@ -28,7 +28,9 @@ export class HomeComponent implements OnInit {
       this.siteFooter();
       $(window).resize(function(){
           this.siteFooter();
-      })
+      });
+
+      $(".navbar").removeClass('white-navbar');
 
       $("#contact").waypoint(function(direction){
   	    if(direction == 'down'){

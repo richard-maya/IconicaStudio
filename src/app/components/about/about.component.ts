@@ -28,12 +28,13 @@ export class AboutComponent implements OnInit {
           this.siteFooter();
       });
 
-      $("section#meaning").waypoint(function(){
-          $(".navbar").addClass('white-navbar');
-      }, {offset: '-0px'});
-      $("section:not(#meaning)").waypoint(function(){
-          $(".navbar").removeClass('white-navbar');
-      }, {offset: '-0px'});
+      $("#meaning").waypoint(function(direction){
+  	    if(direction == 'down'){
+  	        $(".navbar").addClass('white-navbar');
+  	    } else {
+  	        $(".navbar").removeClass('white-navbar');
+  	    }
+      }, {offset: '0px'});
   }
 
 }
