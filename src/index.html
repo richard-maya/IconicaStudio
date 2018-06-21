@@ -1,12 +1,12 @@
 <!doctype html>
 <!--**********************************************************************
-* FILENAME :        MERAKI CREATIVE STUDIO | Index
+* FILENAME :        ICONICA STUDIO | Index
 *
 * DESCRIPTION :
 *       Angular web site dedicated to showcase all our projects so our
 *       customers or potential ones get interested in knowing and hiring us.
 *
-*       Copyright Meraki Creative Studio © All rights reserved.
+*       Copyright Iconica Studio © All rights reserved.
 *
 * AUTHOR :    Richard Maya, Luis Ruíz
 * START DATE :    08 Mar 18
@@ -19,28 +19,64 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Cache-control" content="no-cache, max-age:604800" />
+    <meta http-equiv="Cache-control" content="cache, max-age:604800" />
+    <!-- <meta http-equiv="Cache-control" content="no-cache" /> -->
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <meta name="copyright" content="Copyright © 2018 Meraki Creative Studio">
-    <meta name="p:domain_verify" content="3f645aeb2866408b83f0b469b412b588"/>
+    <meta name="copyright" content="Copyright © 2018 Iconica Studio">
+    <meta name="p:domain_verify" content="e3eb296082b65a37cf31940943bcf7b9"/>
     <base href="/">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+
+    <!-- FAVICONS
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assetsfavicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assetsfavicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- QUANTCAST
+    ================================================== -->
+    <script type="text/javascript">
+        var _qevents = _qevents || [];
+        (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+        })();
+        _qevents.push({
+        qacct:"p-eL423H1ZS4LNM"
+        });
+    </script>
+    <noscript>
+        <div style="display:none;">
+        <img src="//pixel.quantserve.com/pixel/p-eL423H1ZS4LNM.gif" border="0" height="1" width="1" alt="Quantcast"/>
+        </div>
+    </noscript>
 
     <!-- GOOGLE ANALYTICS
     ================================================== -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108864287-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121193876-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'UA-108864287-1');
-    </script> -->
+      gtag('config', 'UA-121193876-1');
+    </script>
+
 
     <!-- FACEBOOK PIXEL
     ================================================== -->
-    <!-- <script>
+    <script>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -49,43 +85,50 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '256718081523336');
+      fbq('init', '256718081523336', {
+        'em': 'email',
+        'ge': 'gender',
+        'db': 'birth',
+        'ct': 'city',
+      });
       fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=256718081523336&ev=PageView&noscript=1"
-    /></noscript> -->
+    /></noscript>
+
 
     <!-- SITE TITLE
     ================================================== -->
-    <title>Branding, Fotografía, Motion Graphics | Estudio diseño y animación | Meraki Creative Studio</title>
+    <title>Branding, Fotografía, Motion Graphics | Estudio diseño y animación | Iconica Studio</title>
 
     <!-- SEO INFO
     ================================================== -->
-    <meta name="description" content="Estudio de diseño gráfico y animación 100% mexicano (ubicado en Toluca y Metepec) especializado en Branding, Motion Graphics, Fotografía y Producciones Audiovisuales.">
+    <meta name="description" content="Somos un estudio creativo de diseño gráfico y animación 100% mexicano. Nos especializamos en proyectos de Branding y Producciones Audiovisuales.">
     <meta name="keywords" content="estudio de diseño, diseño gráfico toluca metepec, motion graphics metepec toluca, branding metepec toluca, edición de video toluca metepec, fotografía producto eventos toluca metepec, ilustración digital toluca metepec, animación digital toluca metepec">
-    <meta name="author" content="Meraki Creative Studio">
+    <meta name="author" content="Iconica Studio">
     <meta name="designer" content="Richard Maya">
 
     <!-- SOCIAL TAGS
     ================================================== -->
     <!-- Twitter Card data -->
-    <meta name="twitter:card" content="http://meraki-creative.studio/img/meraki-cover.jpg">
-    <meta name="twitter:title" content="Branding, Fotografía, Video, Motion Graphics | Estudio diseño y animación | Meraki Creative Studio">
-    <meta name="twitter:description" content="Estudio de diseño gráfico y animación 100% mexicano (ubicado en Toluca) especializado en Branding, Motion Graphics, Fotografía y Producciones Audiovisuales.">
-    <meta name="twitter:image:src" content="http://meraki-creative.studio/img/meraki-cover.jpg">
+    <meta name="twitter:card" content="https://iconica.mx/assets/img/ui/iconica-cover.jpg">
+    <meta name="twitter:title" content="Branding, Fotografía, Motion Graphics | Estudio diseño y animación | Iconica Studio">
+    <meta name="twitter:description" content="Somos un estudio creativo de diseño gráfico y animación 100% mexicano. Nos especializamos en proyectos de Branding y Producciones Audiovisuales.">
+    <meta name="twitter:image:src" content="https://iconica.mx/assets/img/ui/iconica-cover.jpg">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Branding, Fotografía, Video, Motion Graphics | Estudio diseño y animación | Meraki Creative Studio" />
-    <meta property="og:url" content="http://meraki-creative.studio" />
-    <meta property="og:image" content="http://meraki-creative.studio/img/meraki-cover.jpg" />
-    <meta property="og:description" content="Estudio de diseño gráfico y animación 100% mexicano (ubicado en Toluca) especializado en Branding, Motion Graphics, Fotografía y Producciones Audiovisuales." />
-    <meta property="og:site_name" content="Meraki Creative Studio" />
+    <meta property="og:title" content="Branding, Fotografía, Motion Graphics | Estudio diseño y animación | Iconica Studio">
+    <meta property="og:url" content="https://iconica.mx" />
+    <meta property="og:image" content="https://iconica.mx/assets/img/ui/iconica-cover.jpg" />
+    <meta property="og:description" content="Somos un estudio creativo de diseño gráfico y animación 100% mexicano. Nos especializamos en proyectos de Branding y Producciones Audiovisuales.">
+    <meta property="og:site_name" content="Iconica Studio" />
     <meta property="og:type" content="website">
 
     <!-- SCRIPTS
     ================================================== -->
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" charset="utf-8"></script>
+    <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" charset="utf-8"></script> -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
 </head>
 <body>
   <app-root></app-root>

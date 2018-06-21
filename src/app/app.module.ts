@@ -37,6 +37,7 @@ import { ProjectComponent } from './components/portfolio/project/project.compone
 import { CowboysComponent } from './components/portfolio/cowboys/cowboys.component';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { PixelsComponent } from './components/shared/pixels/pixels.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     ProjectComponent,
     CowboysComponent,
     DomseguroPipe,
-    NotfoundComponent
+    NotfoundComponent,
+    PixelsComponent
   ],
   imports: [
     BrowserModule,

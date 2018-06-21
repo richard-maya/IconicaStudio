@@ -1,3 +1,4 @@
+<app-pixels></app-pixels>
 <main>
 <!-- INTRO
 ================================================== -->
@@ -137,7 +138,9 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <iframe src="//lightwidget.com/widgets/028893358c595c7694971a73d195e588.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                <!-- <iframe src="//lightwidget.com/widgets/028893358c595c7694971a73d195e588.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe> -->
+                <iframe src="https://snapwidget.com/embed/561999" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height: 300px;"></iframe>
+                <!-- <iframe src="https://snapwidget.com/embed/562049" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:800px; height:160px"></iframe> -->
             </div>
         </div>
     </div>
@@ -193,7 +196,7 @@
             <div class="col-12 col-md-4 col-lg-5" id="contact-info">
                 <h4 class="display-4 wow fadeInDown mt-5 mt-md-0">¿Cuándo empezamos?</h4>
                 <address class="wow fadeInLeft">
-                    <a href="https://goo.gl/maps/PgvxJ4gERo42" target="_blank" rel="external">
+                    <a [href]="_is.info.map" target="_blank" rel="external">
                         <p><i class="fas fa-map-marker-alt fa-lg"></i> &nbsp; <span>{{_is.info.address1}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{_is.info.address2}}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{_is.info.address3}}</span></p>
                     </a>
                 </address>
