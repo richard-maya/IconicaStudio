@@ -10,6 +10,7 @@ import { StartupsComponent } from './components/services/startups/startups.compo
 import { VideoComponent } from './components/services/video/video.component';
 import { ProjectComponent } from './components/portfolio/project/project.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { LogoComponent } from './components/landings/logo/logo.component';
 
 const APP_ROUTES: Routes = [
   { path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const APP_ROUTES: Routes = [
   { path: 'privacidad', component: PrivacyComponent },
   { path: 'sitemap', component: SitemapComponent },
   { path: '404', component: NotfoundComponent },
+  { path: 'CreamosTuLogo', component: LogoComponent },
   { path: 'servicios/branding', component: BrandingComponent },
   { path: 'servicios/startups', component: StartupsComponent },
   { path: 'servicios/audiovisual', component: VideoComponent },

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
 import { Subscription }   from 'rxjs/Subscription';
 import { PageScrollConfig } from 'ng2-page-scroll';
@@ -14,6 +14,8 @@ declare var $:any;
 })
 export class AppComponent implements OnInit {
     private wowSubscription: Subscription;
+    // public direccion:any = document.location.pathname;
+    // public ocultarHeaderFooter:boolean = false;
 
     constructor(private wowService: NgwWowService, public _is:InfoService, public _port:PortfolioService){
       this.wowService.init({
@@ -31,6 +33,12 @@ export class AppComponent implements OnInit {
               return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
           }
       };
+
+      // if(this.direccion == "DisenamosTuLogo"){
+      //     this.ocultarHeaderFooter = true;
+      // } else {
+      //     this.ocultarHeaderFooter = false;
+      // }
     }
 
     ngOnInit(){
@@ -41,5 +49,13 @@ export class AppComponent implements OnInit {
         		$(".navbar").removeClass("navbar-small");
         	}
         });
+    }
+
+    ngOnChanges(){
+        // if(this.direccion == "DisenamosTuLogo"){
+        //     this.ocultarHeaderFooter = true;
+        // } else {
+        //     this.ocultarHeaderFooter = false;
+        // }
     }
 }

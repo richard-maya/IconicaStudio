@@ -38,6 +38,7 @@ import { CowboysComponent } from './components/portfolio/cowboys/cowboys.compone
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { PixelsComponent } from './components/shared/pixels/pixels.component';
+import { LogoComponent } from './components/landings/logo/logo.component';
 
 
 @NgModule({
@@ -60,7 +61,8 @@ import { PixelsComponent } from './components/shared/pixels/pixels.component';
     CowboysComponent,
     DomseguroPipe,
     NotfoundComponent,
-    PixelsComponent
+    PixelsComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,
