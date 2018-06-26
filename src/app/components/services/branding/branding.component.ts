@@ -9,7 +9,7 @@ declare var $:any;
 })
 export class BrandingComponent implements OnInit {
 
-  constructor(public _is:InfoService) { }
+  constructor(public _is:InfoService) {}
 
   public siteFooter(){
       let mainContent = $('main');

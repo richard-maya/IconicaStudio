@@ -4,8 +4,12 @@ import { Subscription }   from 'rxjs/Subscription';
 import { PageScrollConfig } from 'ng2-page-scroll';
 import { InfoService } from './services/info.service';
 import { PortfolioService } from './services/portfolio.service';
+import { NavigationEnd, Router } from '@angular/router';
+import 'rxjs/add/operator/distinctUntilChanged';
 // import {NgsRevealConfig} from 'ng-scrollreveal';
 declare var $:any;
+declare var gtag:any;
+declare var fbq:any;
 
 @Component({
   selector: 'app-root',
@@ -15,14 +19,15 @@ declare var $:any;
 export class AppComponent implements OnInit {
     private wowSubscription: Subscription;
     // public direccion:any = document.location.pathname;
-    // public ocultarHeaderFooter:boolean = false;
 
-    constructor(private wowService: NgwWowService, public _is:InfoService, public _port:PortfolioService){
+    constructor(private wowService: NgwWowService, public _is:InfoService, public _port:PortfolioService, public router:Router){
+      // WOWJS
       this.wowService.init({
-          offset:       75,
+          offset:       -10,
           mobile:       true
       });
 
+      // PageScroll
       PageScrollConfig.defaultScrollOffset = 0;
       PageScrollConfig.defaultEasingLogic = {
           ease: (t: number, b: number, c: number, d: number): number => {
@@ -34,11 +39,22 @@ export class AppComponent implements OnInit {
           }
       };
 
-      // if(this.direccion == "DisenamosTuLogo"){
-      //     this.ocultarHeaderFooter = true;
-      // } else {
-      //     this.ocultarHeaderFooter = false;
-      // }
+      // Google ANALYTICS
+      router.events.distinctUntilChanged((previous: any, current: any) => {
+            if(current instanceof NavigationEnd) {
+                return previous.url === current.url;
+            }
+            return true;
+        }).subscribe((x: any) => {
+            // console.log('router.change', x);
+            gtag('js', new Date());
+            // gtag('config', 'UA-121193876-1');
+            gtag('config', 'UA-121193876-1', {
+              // 'page_title' : 'homepage',
+              'page_path': x.url
+            });
+            fbq('track', 'PageView');
+        });
     }
 
     ngOnInit(){
@@ -52,10 +68,6 @@ export class AppComponent implements OnInit {
     }
 
     ngOnChanges(){
-        // if(this.direccion == "DisenamosTuLogo"){
-        //     this.ocultarHeaderFooter = true;
-        // } else {
-        //     this.ocultarHeaderFooter = false;
-        // }
+
     }
 }
