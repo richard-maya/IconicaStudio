@@ -46,16 +46,12 @@ export class AppComponent implements OnInit {
             }
             return true;
         }).subscribe((x: any) => {
+            // console.log('router.change', x);
             gtag('js', new Date());
+            // gtag('config', 'UA-121193876-1');
             gtag('config', 'UA-121193876-1', {
               // 'page_title' : 'homepage',
               'page_path': x.url
-            });
-            fbq('init', '256718081523336', {
-              'em': 'email',
-              'ge': 'gender',
-              'db': 'birth',
-              'ct': 'city',
             });
             fbq('track', 'PageView');
         });
