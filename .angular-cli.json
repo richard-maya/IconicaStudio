@@ -27,8 +27,7 @@
           "../node_modules/bootstrap/dist/js/bootstrap.min.js",
           "../node_modules/wowjs/dist/wow.js",
           "../node_modules/waypoints/lib/jquery.waypoints.min.js",
-          "assets/lightbox/js/lightbox.min.js",
-          "assets/masonry/masonry.pkgd.min.js"
+          "assets/lightbox/js/lightbox.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
